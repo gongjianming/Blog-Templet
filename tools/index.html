@@ -10,10 +10,19 @@
     
     <meta name="author" content="Liu Zhiwei">
     
+
+    
     <meta name="description" content="登高致远平声志，一山放过一山拦 ，向上吧，少年！">
-    
-    
-    
+<meta property="og:type" content="website">
+<meta property="og:title" content="tools">
+<meta property="og:url" content="http://liuzhiwei.top/tools/index.html">
+<meta property="og:site_name" content="Liu Zhiwei’s Blog">
+<meta property="og:description" content="登高致远平声志，一山放过一山拦 ，向上吧，少年！">
+<meta property="og:updated_time" content="2017-04-13T15:12:13.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="tools">
+<meta name="twitter:description" content="登高致远平声志，一山放过一山拦 ，向上吧，少年！">
+
     
     <link rel="alternative" href="/atom.xml" title="Liu Zhiwei’s Blog" type="application/atom+xml">
     
@@ -29,10 +38,11 @@
 
       <body>
         <header>
-          <div>
+          
+<div>
 		
 			<div id="imglogo">
-				<a href="/"><img src="/img/222.png" alt="Liu Zhiwei’s Blog" title="Liu Zhiwei’s Blog"/></a>
+				<a href="/"><img src="/img/logo.png" alt="Liu Zhiwei’s Blog" title="Liu Zhiwei’s Blog"/></a>
 			</div>
 			
 			<div id="textlogo">
@@ -45,15 +55,15 @@
 				<ul>
 					<ul>
 					 
-						<li><a href="/">Home</a></li>
+						<li><a href="/">主页</a></li>
 					
-						<li><a href="/archives">Archives</a></li>
+						<li><a href="/archives">归档</a></li>
 					
-						<li><a href="/about">About</a></li>
+						<li><a href="/about">关于</a></li>
 					
-						<li><a href="/share">Share</a></li>
+						<li><a href="/share">分享</a></li>
 					
-						<li><a href="/tools">Tools</a></li>
+						<li><a href="/tools">工具</a></li>
 					
 					<li>
  					
@@ -78,7 +88,7 @@
   </h1>
   <p class="article-author">By
        
-		<a href="http://liuzhiwei.top/about" title="Liu Zhiwei" target="_blank" itemprop="author">Liu Zhiwei</a>
+		<a href="/about" title="Liu Zhiwei" target="_blank" itemprop="author">Liu Zhiwei</a>
 		
   <p class="article-time">
     <time datetime="2017-04-13T15:12:12.000Z" itemprop="datePublished"> 发表于 2017-04-13</time>
@@ -96,10 +106,11 @@
 </div>
 
 
-<div class="article-share" id="share">
 
-<div class="share-jiathis">
-  
+	<div class="article-share" id="share">
+	
+	<div class="share-jiathis">
+	  
 <div class="jiathis_style_24x24">
 	<a class="jiathis_button_tsina"></a>
 	<a class="jiathis_button_weixin"></a>
@@ -121,10 +132,14 @@
 <script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
 " charset="utf-8"></script>      
 
- </div>
+	 </div>
+	
+	</div>
 
-</div>
-</footer>   	       
+
+</footer>
+
+   	       
 	</article>
 	
 	
@@ -140,35 +155,32 @@
 	
 	
 	<section class="info">
-		<p> Hello ,I&#39;m Liu Zhiwei in NWSUAF. <br/>
+		<p> Hello ,I&#39;m Larry Page in Google. <br/>
 			This is my blog,believe it or not.</p>
 	</section>
 	 
 	<div class="social-font" class="clearfix">
 		
-		<a href="http://weibo.com/5285645759" target="_blank" class="icon-weibo" title="微博"></a>
-		
-		
-		<a href="https://github.com/liufengyuqing" target="_blank" class="icon-github" title="github"></a>
+		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
 		
 		
 		
 		
 		
-		<a href="https://www.linkedin.com/in/志伟-刘-23354113a/" target="_blank" class="icon-linkedin" title="linkedin"></a>
 		
 		
 		
-		<a href="https://www.zhihu.com/people/liu-feng-8-25/answers" target="_blank" class="icon-zhihu" title="知乎"></a>
 		
-		
-		
-		<a href="mailto:imjark@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
 		
 	</div>
-		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2017 
+			
 		
-		<a href="http://liuzhiwei.top/about" target="_blank" title="Liu Zhiwei">Liu Zhiwei</a>
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="Liu Zhiwei">Liu Zhiwei</a>
+		
 		
 		</p>
 </div>
@@ -176,6 +188,7 @@
         <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){ 
@@ -194,18 +207,6 @@ $(document).ready(function(){
       a = $('#asidepart'),
       c = $('.closeaside'),
       o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
-        
-    }
-  });
   c.click(function(){
     a.addClass('fadeOut').css('display', 'none');
     o.css('display', 'block').addClass('fadeIn');
@@ -218,6 +219,18 @@ $(document).ready(function(){
   });
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
   });
 });
 </script>
@@ -276,6 +289,10 @@ $(document).ready(function(){
 
 
 <!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
 
       </body>
      </html>
